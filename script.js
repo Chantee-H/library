@@ -29,3 +29,22 @@ function display(){
     let input =  '<tr><td>' + title.value + '</td><td>' + author.value + '</td><>' + pages.value + '</td></tr>';
     document.getElementById("output").innerHTML += input;
   }
+
+
+let modal = document.getElementById("modal");
+let newBook = document.getElementById("new-book");
+let exit = document.getElementsByClassName("close")[0];
+
+newBook.onclick = function() {
+  modal.style.display = "block";
+}
+
+exit.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
