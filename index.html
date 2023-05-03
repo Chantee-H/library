@@ -28,5 +28,19 @@
 </p>
     <button class="submit" type="button" onclick="addBookToLibrary()">Add</button>
     </form>
+    <table id="table">
+        <thead>
+        <tr>
+        <th>Title:</th>
+        <th>Author:</th>
+        <th>Pages:</th>
+        <th>Read:</th>
+        <th><button type="button" onclick="deleteRow(this)" class="remove-btn">Remove</button></th>
+    </tr>
+    </thead>
+    <tbody id="output">
+        <tr></tr>
+    </tbody>  
+    </table>
 </body>
 </html>

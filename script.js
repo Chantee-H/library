@@ -20,6 +20,12 @@ function addBookToLibrary(){
   if(a !== '' && b !== '' && c !== ''){
     myLibrary.push(new Book(a, b, c, d));
     console.log(myLibrary);
+    display();
   }
   
 }
+
+function display(){
+    let input =  '<tr><td>' + title.value + '</td><td>' + author.value + '</td><>' + pages.value + '</td></tr>';
+    document.getElementById("output").innerHTML += input;
+  }
