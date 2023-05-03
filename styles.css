@@ -85,8 +85,8 @@ table {
 
 #read {
     position: relative;
-    margin-left: 30px;
-    top: 2px;
+    top: 30px;
+    right: 123px;
 }
 
 .read-btn, .not-read{
