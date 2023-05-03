@@ -1,0 +1,143 @@
+* {
+    font-family: sans-serif, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e9ecef;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0px 15px 10px -15px #111;
+    padding-bottom: 30px;
+}
+
+#form {
+    line-height: 1.8;
+}
+
+#container {
+    width: 300px;
+    clear: both;
+    margin: 150px auto;
+    background-color: #fefefe;
+    padding: 15px;
+    border-radius: 3px;
+    height: 350px;
+  }
+  
+#container input {
+    width: 100%;
+    clear: both;
+    height: 22px;
+    border: 1px solid #7e7878;
+    border-radius: 3px;
+}
+
+.submit {
+    margin-top: 20px;
+    width: 80px;
+    height: 25px;
+}
+
+table, th, td{
+    border-bottom: 2px solid #ced4da;
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 8px; 
+    text-align: left;
+}
+      
+th {
+    background-color: #ced4da;
+}
+
+td{
+    background-color: #dee2e6;
+}
+
+table {
+    width: 50vw;
+    margin-top: 30px;
+}
+
+.remove-btn {
+    font-weight: bold;
+    font-size: 15px;
+    width: 70px;
+    height: 25px;
+    background-color: #dee2e6;
+    border: 1px solid #7e7979;
+    border-radius: 2px;
+}
+
+#read1 {
+    margin-top: 8px;
+}
+
+#read2 {
+    position: absolute;
+}
+
+#read {
+    position: relative;
+    margin-left: 30px;
+    top: 2px;
+}
+
+.read-btn, .not-read{
+    width: 75px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+
+}
+.read-btn {
+    background-color: #37ac37;
+}
+
+.not-read {
+    background-color: #db3636;
+}
+
+.modal1 {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: #00000066; 
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 255px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#new-book {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 120px;
+    height: 40px;
+    font-size: 19px;
+    background-color: #adb5bd;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
