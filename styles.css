@@ -77,17 +77,16 @@ table {
 
 #read1 {
     margin-top: 8px;
-    margin-bottom: 10px;
 }
 
-/* #read2 {
+#read2 {
     position: absolute;
 }
 
 #read {
     position: relative;
     margin-left: 25px;
-} */
+}
 
 .read-btn, .not-read{
     width: 75px;
