@@ -26,8 +26,10 @@ function addBookToLibrary(){
 }
 
 function display(){
+    let read = document.getElementById('read').checked ? '<input type="button" value="Read" class="read-btn" />' : 
+  '<input type="button" value="Not Read" class="read-btn not-read" />';
     let remove = '<input type="checkbox" value="Remove" class="remove"/>';
-    let input =  '<tr><td>' + title.value + '</td><td>' + author.value + '</td><>' + pages.value + '</td><td>' + remove + '</td></tr>';
+    let input =  '<tr><td>' + title.value + '</td><td>' + author.value + '</td><>' + pages.value + '</td><td>' + read + '</td><td>' + remove + '</td></tr>';
     document.getElementById("output").innerHTML += input;
   }
 
@@ -37,6 +39,18 @@ function deleteRow() {
       e.parentNode.parentNode.remove()
   });
 }
+
+document.querySelector('#table').addEventListener('click', e => {
+    if (e.target.matches('.read-btn'))  
+      if(e.target.value === 'Read'){
+        e.target.value = 'Not Read';
+        e.target.style.backgroundColor = "#db3636";
+      }else if(e.target.value === 'Not Read'){
+        e.target.value = 'Read';
+        e.target.style.backgroundColor = "#37ac37";
+      };
+  });
+
 
 let modal = document.getElementById("modal");
 let newBook = document.getElementById("new-book");
