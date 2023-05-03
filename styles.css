@@ -79,14 +79,14 @@ table {
     margin-top: 8px;
 }
 
-#read2 {
+/* #read2 {
     position: absolute;
 }
 
 #read {
     position: relative;
     margin-left: 25px;
-}
+} */
 
 .read-btn, .not-read{
     width: 75px;
