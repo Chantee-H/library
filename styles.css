@@ -105,29 +105,29 @@ table {
 }
 
 .modal1 {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%;
-  overflow: auto;
-  background-color: #00000066; 
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: #00000066; 
 }
 
 .close {
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
-  margin-left: 255px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 255px;
 }
 
 .close:hover,
 .close:focus {
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #new-book {

@@ -29,7 +29,7 @@ function display(){
     let read = document.getElementById('read').checked ? '<input type="button" value="Read" class="read-btn" />' : 
   '<input type="button" value="Not Read" class="read-btn not-read" />';
     let remove = '<input type="checkbox" value="Remove" class="remove"/>';
-    let input =  '<tr><td>' + title.value + '</td><td>' + author.value + '</td><>' + pages.value + '</td><td>' + read + '</td><td>' + remove + '</td></tr>';
+    let input =  '<tr><td>' + title.value + '</td><td>' + author.value + '</td><td>' + pages.value + '</td><td>' + read + '</td><td>' + remove + '</td></tr>';
     document.getElementById("output").innerHTML += input;
   }
 
