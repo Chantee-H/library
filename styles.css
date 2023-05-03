@@ -75,20 +75,6 @@ table {
     border-radius: 2px;
 }
 
-/* #read1 {
-    margin-top: 8px;
-    margin-bottom: 15px;
-}
-
-#read2 {
-    position: absolute;
-}
-
-#read {
-    position: relative;
-    margin-left: 25px;
-} */
-
 .read-btn, .not-read{
     width: 75px;
     height: 25px;
