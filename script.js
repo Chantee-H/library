@@ -26,10 +26,17 @@ function addBookToLibrary(){
 }
 
 function display(){
-    let input =  '<tr><td>' + title.value + '</td><td>' + author.value + '</td><>' + pages.value + '</td></tr>';
+    let remove = '<input type="checkbox" value="Remove" class="remove"/>';
+    let input =  '<tr><td>' + title.value + '</td><td>' + author.value + '</td><>' + pages.value + '</td><td>' + remove + '</td></tr>';
     document.getElementById("output").innerHTML += input;
   }
 
+
+function deleteRow() {
+    document.querySelectorAll('#table .remove:checked').forEach(e => {
+      e.parentNode.parentNode.remove()
+  });
+}
 
 let modal = document.getElementById("modal");
 let newBook = document.getElementById("new-book");
