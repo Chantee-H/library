@@ -1,4 +1,4 @@
-# odin-library
+# library
 
 This is a simple library app.
 
