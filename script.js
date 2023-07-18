@@ -1,5 +1,7 @@
 'use strict';
 
+let form = document.getElementById('form');
+
 let myLibrary = [];
 
 class Book {
@@ -12,7 +14,7 @@ class Book {
 }
 
 function addBookToLibrary(){
-  let a = document.getElementById('title').value
+  let a = document.getElementById('title').value;
   let b = document.getElementById('author').value;
   let c = document.getElementById('pages').value;
   let d = document.getElementById('read').checked;
@@ -68,4 +70,9 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+form.onsubmit = e => {
+  e.preventDefault();
+  addBookToLibrary();
 }
